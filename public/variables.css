@@ -1,0 +1,18 @@
+:root {
+    --border: 1px solid red;
+    --border-card: 1.2px solid rgb(187, 187, 187);
+    --inci: #153d8a;
+    --danger: rgb(180, 5, 5);
+    --info: #0b4bc0;
+    --blanco: rgb(255, 255, 255);
+    --montserrat: 'Montserrat', sans-serif;
+    --montserrat_light: 300;
+    --montserrat_regular: 400;
+    --montserrat_bold: 700;
+    --roboto: 'Roboto', sans-serif;
+    --roboto_light: 300;
+    --roboto_regular: 400;
+    --roboto_bold: 700;
+    --margin-default: 1rem;
+    --border-radius-default: 0.80rem;
+}

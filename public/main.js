@@ -1,25 +1,24 @@
+// Función expandir menú
 function toggle() {
     let menuShow = document.getElementById('menu-toggle');
-
     menuShow.classList.toggle('no-show');
-    console.log(menuShow)
+    let mainHome = document.getElementById('home');
+    let burguerSet = document.getElementById('burguer-menu');
+    let status, display;
+    // Poner atributos de accesibilidad
     if (menuShow.classList.contains("no-show")) {
-        console.log("Menú Oculto");
-        let mainHome = document.getElementById('home');
-        let burguerSet = document.getElementById('burguer-menu');
-        mainHome.style.display = 'block';
-        mainHome.setAttribute("aria-hidden", "false");
-        burguerSet.setAttribute("aria-expanded", "false")
+        status = false;
+        display = 'block'
     } else {
-        console.log("Menu Mostrandose");
-        let mainHome = document.getElementById('home');
-        let burguerSet = document.getElementById('burguer-menu');
-        mainHome.style.display = 'none';
-        mainHome.setAttribute("aria-hidden", "true");
-        burguerSet.setAttribute("aria-expanded", "true")
+        status = true;
+        display = 'none'
     }
+    mainHome.style.display = display;
+    mainHome.setAttribute("aria-hidden", status);
+    burguerSet.setAttribute("aria-expanded", status)
 }
 
+// Función Acción del botón volver al inicio
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera

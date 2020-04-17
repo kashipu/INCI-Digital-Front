@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "variables.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap');
 
 
 .nav {
@@ -38,7 +39,7 @@
 
 
 
-.show {
+.no-show {
     display: none;
 }
 
@@ -186,13 +187,17 @@
 
 }
 
+.share-list i {
+    margin-right: 0.3rem;
+}
+
 .share-list li {
     display: inline-block;
     padding: 0.3rem;
 }
 
 .share-list li:first-child {
-    padding: 0rem;
+    padding-left: 0rem;
 }
 
 .share-list li a {
@@ -207,7 +212,7 @@
 .text-article {
     margin: var(--margin-default);
     font-family: var(--roboto);
-    font-weight: var(--roboto-medium);
+    /* font-weight: var(--roboto-medium); */
     line-height: 1.6;
     font-size: 1.1rem;
 }
@@ -256,3 +261,5 @@
     display: inline-block;
     font-size: 0.9rem;
 }
+
+
